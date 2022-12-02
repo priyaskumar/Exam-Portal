@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <!--CSS file-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <!--Logo-->
+        <div class="logo">
+            <img src="img/logo.png" alt="" width="180" height="50">
+        </div>
+        <!--Home-Menu-->
+        <a href="https://priyaskumar.github.io/Exam-Portal/">Home</a>
+    </header>
+
+    <!--Questions-->
+    <section id="questions" class="flex-row">
+        <!--Left section-->
+        <div class="left-section">
+
+            <!--Question Number-->
+            <p id="qno">Question No.1 )</p>
+
+            <!--Question-->
+            <p id="ques">What is the average of first five multiples of 20?</p>
+
+            <!--Answer choices-->
+            <div class="choices">
+
+                <!--First choice-->
+                <div class="opt">
+                    <input type="checkbox" id="1st" name="answer" value="60"/>
+                    <label id="1st_label" for="1st"> <span id="option" >(A) </span>60</label>
+                </div>
+
+                <!--second choice-->
+                <div class="opt">
+                    <input type="checkbox" id="2nd" name="answer" value="50">
+                    <label id="2nd_label" for="2nd"> <span id="option" >(B) </span>50</label>
+                </div>
+
+                <!--Third choice-->
+                <div class="opt">
+                    <input type="checkbox" id="3rd" name="answer" value="40">
+                    <label id="3rd_label" for="3rd"> <span id="option" >(C) </span>40</label>
+                </div>
+
+                <!--Fourth choice-->
+                <div class="opt">
+                    <input type="checkbox" id="4th" name="answer" value="30">
+                    <label id="4th_label" for="4th"> <span id="option" >(D) </span>30</label>
+                </div>                
+            </div>
+
+            <div class="button-container">
+                <!--Review later button-->
+                <input type="button" class="button" id="review-button" value="Review for later">
+
+                <!--Previous button-->
+                <input type="button" class="button" id="prev-button" value="‹ Previous">
+                
+                <!--Next button-->
+                <input type="button" class="button" id="next-button" value="Next ›">
+                
+            </div>
+            
+        </div>
+
+        <!--Right section-->
+        <div class="right-section">
+
+            <!--Timer-->
+            <div class="timer flex-row">
+                <!--Timer icon-->
+                <img src="img/timer.png" alt="" height="25px" width="20px">
+
+                <!--Time left-->
+                <p class="time-left">Time Left : 
+                    <span id="mins">00</span>
+                    mins :
+                    <span id="secs">00</span>
+                    secs 
+                </p>                
+            </div>
+            
+            <!--Questions grid-->
+            <div class="grid">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+                <div class="grid-item">11</div>
+                <div class="grid-item">12</div>
+                <div class="grid-item">13</div>
+                <div class="grid-item">14</div>
+                <div class="grid-item">15</div>
+                <div class="grid-item">16</div>
+                <div class="grid-item">17</div>
+                <div class="grid-item">18</div>
+                <div class="grid-item">19</div>
+                <div class="grid-item">20</div>
+                
+            </div>   
+            
+            <!--Submit Button-->
+            <button type="submit" id="submit-button" class="button">Submit Test</button>
+
+        </div>
+    </section>
+
+    <!--Submission success-->
+    <section id="success" class="hide">
+        <p>Thank You! Your answers have been recorded.</p>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <a class="footer-item">About Us</a>
+            <a class="footer-item">Privacy Policy</a>
+            <a class="footer-item">Contact Us</a>
+        </div>
+        <p id="copyright">Copyright &copy; 2022 <a href="https://github.com/priyaskumar">github.com/priyaskumar</a></p>
+    </footer>
+
+    <!--JS file-->
+    <script src="index.js" type="module"></script>
+    
+</body>
+</html>

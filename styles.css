@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+*{
+    margin: 0;
+}
+
+/* set font style as Comic Neue */
+body {
+    font-family: 'Comic Neue', cursive;
+    font-size: 17px;
+}
+
+section {
+    margin: 100px ;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* Add background color and set padding for the navbar */
+.navbar {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    height: 60px;
+    padding-left: 120px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);       
+}   
+
+/* Style menu inside navbar */
+.navbar a{    
+    margin-left: 80px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: #1284d5;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.opt{
+    padding-bottom: 15px;
+}
+
+.right-section {
+    margin-right: 200px;
+}
+
+.timer{
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+}
+
+.time-left{
+    padding : 5px;
+}
+
+.grid{
+    display: grid;
+    width: 200px;
+    height: 160px;    
+    margin: 10px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-item{
+    width: 38px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button{
+    padding:5px;
+    border-style: solid;
+    border-color: rgb(8, 217, 254);
+    border-width: 3px;
+    background-color: white;
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;    
+    text-align:center;
+    cursor: pointer;
+   
+}
+
+
+.footer{
+    padding : 80px;
+    color: rgba(255, 255, 255, 0.864);
+}
+
+.footer-content {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.864);
+}
+
+.footer-item{
+    padding: 5px;
+    margin: 20 8px;
+}
+
+.footer-item:hover{
+    cursor: pointer;
+    color: white
+}
+
+.hide {
+    display:none;
+}
+
+.review-grid {
+    background-color: blue;
+}
+
+.select-grid {
+    background-color: orange;
+}
+
+.answer-grid {
+    background-color: green;
+}
+#qno {
+    color: red;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+#ques {
+    color: gray;
+    padding-bottom: 15px;
+}
+
+#option {
+    color : blue;
+    font-weight: bold;
+}
+
+#submit-button {
+    margin: 30px 60px;    
+}
+
+#review-button {
+    margin: 70px 35px;
+    /* position : absolute; */
+}
+
+#prev-button {
+    margin : 70px 35px;
+    
+}
+
+#next-button {
+    margin : 70px 35px;
+    
+}
+
+#success{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    padding-bottom: 25px;
+    margin-bottom: 300px;
+    border-bottom: gainsboro 0.5px solid;
+}
+
+#copyright {
+    text-align: center;
+}
+
+/* for small screens - like mobile phones */
+@media only screen and (max-width: 600px){
+    section {
+        margin : 50px 15px;
+    }
+
+    .right-section {
+        margin-right: 20px;
+    }
+
+    .flex-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .navbar {
+        padding-left: 10px;
+    }
+
+    .navbar a{
+        display: none;
+    }
+    
+}
+
+/* for medium sized screens - like tablets*/
+@media only screen and (max-width: 768px){
+    section {
+        margin: 50px 30px;
+    }
+
+    .navbar {
+        padding-left: 20px;
+    }
+}
+
+
