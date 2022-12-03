@@ -47,11 +47,6 @@ function timer() {
     document.getElementById('mins').innerHTML = min;
     
 }
-// function to calculate score
-function calcScore() {
-    
-
-}
 
 // function to submit the test
 function submitTest() {
@@ -66,12 +61,14 @@ function submitTest() {
     // add success section
     document.getElementById('success').classList.remove('hide');
 
+    // calculate score
     for(let i=0; i<grid.length; i++){
         if(chosenAns[i] == ques[i].answer){
             score++;
         }
     }
 
+    // display score
     let scored = document.createElement("score");
     scored.id="score";
     scored.innerHTML = "Your Score : "+score+"/20";
